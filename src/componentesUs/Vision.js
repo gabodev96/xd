@@ -12,7 +12,7 @@ export const Vision = () => {
         />
       </div>
       <div className=" text-justify mt-2 md:mt-2 flex overflow-hidden mx-2  lg:mx-24 ">
-        <p className="font-baloo">
+        <p className="font-baloo font-light">
           So I started to walk into the water. I won't lie to you boys, I was
           terrified. But I pressed on, and as I made my way past the breakers a
           strange calm came over me.
