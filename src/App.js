@@ -4,7 +4,7 @@ import { RouterPrincipal } from "./routers/RouterPrincipal";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 function App() {
   useEffect(() => {

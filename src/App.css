@@ -5,7 +5,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap");
 html {
   /*   no scrollbars overhere :D   */
-  overflow-y: hidden;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  color: red;
+  z-index: 50;
 }
 
 html body {
@@ -155,7 +160,7 @@ textarea {
 }
 
 .navbare {
-  box-shadow: 0px 5px 10px 0px #aaa;
+  box-shadow: 0px 1px 1px 0px #aaa;
   width: 100%;
   background: #fff;
   color: #000;
@@ -308,4 +313,11 @@ textarea {
   .navbare-contenedor input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
+}
+
+.activado .bigred {
+  background-color: lightskyblue;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }

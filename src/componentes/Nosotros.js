@@ -12,7 +12,7 @@ export const Nosotros = () => {
           <Mision />
           <Vision />
         </div>
-        <div className="p-2 h-4/5">
+        <div className="p-2 h-full">
           <Historia />
         </div>
       </div>

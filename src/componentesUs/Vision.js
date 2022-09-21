@@ -7,7 +7,7 @@ export const Vision = () => {
       <div className="flex  justify-center ">
         <img
           src={require("../images2/ojo.gif")}
-          className=" w-20 md:w-2/12 rounded-full "
+          className=" w-10 md:w-20 lg:w-32 rounded-full "
           alt=""
         />
       </div>

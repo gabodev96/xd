@@ -6,8 +6,8 @@ export const Mision = () => {
       <h1 className="font-baloo pt-2 font-extrabold">Mision</h1>
       <div className="flex  justify-center ">
         <img
-          src={require("../images2/rocket.gif")}
-          className="w-2/12 "
+          src={require("../images2/misiones.gif")}
+          className="w-10 md:w-20 lg:w-32 rounded-full"
           alt=""
         />
       </div>

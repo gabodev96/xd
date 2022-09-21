@@ -3,12 +3,12 @@ import React from "react";
 export const Historia = () => {
   return (
     <>
-      <div className="bg-white contacto text-center font-baloo pt-2 rounded w-full h-72 lg:h-full ">
+      <div className="bg-white contacto text-center font-baloo pt-2 rounded w-full h-80 lg:h-full ">
         <h1 className="font-baloo font-extrabold">Historia</h1>
         <div className="flex  justify-center ">
           <img
             src={require("../images2/book.gif")}
-            className="w-2/12 md:w-40  rounded-full "
+            className="w-2/12 md:w-20 lg:w-32  rounded-full "
             alt=""
           />
         </div>
