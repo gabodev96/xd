@@ -3,7 +3,7 @@ import React from "react";
 export const Historia = () => {
   return (
     <>
-      <div className="bg-white contacto text-center font-baloo pt-2 rounded w-full h-96 lg:h-full ">
+      <div className="bg-white contacto text-center font-baloo pt-2 rounded w-full h-72 lg:h-full ">
         <h1 className="font-baloo font-extrabold">Historia</h1>
         <div className="flex  justify-center ">
           <img
@@ -12,7 +12,7 @@ export const Historia = () => {
             alt=""
           />
         </div>
-        <p className="text-justify overflow-hidden font-light font-baloo mt-2  mx-16">
+        <p className="text-justify overflow-hidden font-light font-baloo mt-2  mx-8 lg:mx-96">
           So I started to walk into the water. I won't lie to you boys, I was
           terrified. But I pressed on, and as I made my way past the breakers a
           strange calm came over me. I don't know if it was divine intervention

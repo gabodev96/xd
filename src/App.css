@@ -78,7 +78,7 @@ html body {
 }
 
 .right {
-  padding: 25px 40px;
+  padding: 10px 40px;
 }
 
 h2 {
@@ -93,7 +93,7 @@ h2 {
   background-color: rgba(230, 230, 230, 0.6);
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  margin-bottom: 22px;
+  margin-bottom: 5%;
   transition: 0.3s;
 }
 
