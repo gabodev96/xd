@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap");
 html {
   /*   no scrollbars overhere :D   */
+  overflow-x: hidden;
 }
 
 .carousel-control-next,
