@@ -6,7 +6,7 @@ export const Marcas = () => {
   return (
     <AnimatedPage>
       <>
-        <div className="contacto flex flex-col  text-center font-baloo h-screen w-screen  pr-0 lg:pr-20  xl:pr-20 ">
+        <div className="contacto flex flex-col  text-center font-baloo h-screen w-screen">
           <div className="pt-24 underline decoration-red-500">
             <h1 className="text-3xl md:text-6xl font-baloo">Nuestras Marcas</h1>
           </div>

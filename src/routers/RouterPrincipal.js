@@ -21,76 +21,96 @@ export const RouterPrincipal = () => {
   return (
     <>
       <BrowserRouter>
-        <ul className="p-0 m-0  bg-gray-300">
-          <nav className="w-16 lg:ml-4 hidden pr-4 lg:flex  xl:flex flex-col items-center  justify-evenly lg:justify-evenly xl:justify-evenly sticky bg-gray-300 border-r-[1px] border-r-black z-50 h-screen">
+        <nav
+          className=" flex flex-wrap
+          items-center
+          justify-between
+          w-full
+          hidden
+          h-16
+          lg:flex
+          md:hidden
+          px-4
+          text-lg text-gray-700
+          bg-gray-300
+          border-b border-black"
+        >
+          <div>
             <img
               src={require("../imagenesbrand/200x200produ3n.png")}
-              className="bg-white rounded-full border border-red-500"
+              className="bg-white rounded-full w-1/6 border border-red-500"
               alt=""
             />
-
-            <li>
+          </div>
+          <ul
+            className=" pt-2
+              text-base text-gray-700
+              flex
+               flex-wrap
+            "
+          >
+            <li className="px-4">
               <NavLink
                 className={({ isActive }) => (isActive ? "activado" : "group")}
                 to="/"
               >
                 {" "}
                 <FaHome size={35} className="bigred" color={"#007bff"} />
-                <span className="absolute w-auto p-2 ym-2 min-w-max left-16 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                <span className="absolute w-auto p-2  z-50  rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
                   Inicio
                 </span>
               </NavLink>
             </li>
 
-            <li>
+            <li className="px-4">
               <NavLink
                 className={({ isActive }) => (isActive ? "activado" : "group")}
                 to="/nosotros"
               >
                 {" "}
                 <FaIndustry size={35} className="bigred" color={"#007bff"} />
-                <span className="absolute w-auto p-2 ym-2 min-w-max left-16 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                <span className="absolute w-auto p-2  z-50  rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
                   Nosotros
                 </span>
               </NavLink>
             </li>
-            <li>
+            <li className="px-4">
               <NavLink
                 className={({ isActive }) => (isActive ? "activado" : "group")}
                 to="/galeria"
               >
                 {" "}
                 <FaImages size={35} className="bigred" color={"#007bff"} />
-                <span className="absolute w-auto p-2 ym-2 min-w-max left-16 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                <span className="absolute w-auto p-2  z-50  rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
                   Galeria de productos
                 </span>
               </NavLink>
             </li>
-            <li>
+            <li className="px-4">
               <NavLink
                 className={({ isActive }) => (isActive ? "activado" : "group")}
                 to="/contacto"
               >
                 {" "}
                 <FaPhone size={35} className="bigred" color={"#007bff"} />
-                <span className="absolute w-auto p-2 ym-2 min-w-max left-16 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                <span className="absolute w-auto p-2  z-50  rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
                   Contactanos
                 </span>
               </NavLink>
             </li>
-            <li>
+            <li className="px-4">
               <NavLink
                 className={({ isActive }) => (isActive ? "activado" : "group")}
                 to="/marcas"
               >
                 {" "}
                 <FaCopyright size={35} className="bigred" color={"#007bff"} />
-                <span className="absolute w-auto p-2 ym-2 min-w-max left-16 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                <span className="absolute w-auto p-2  z-50  rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
                   Nuestras Marcas
                 </span>
               </NavLink>
             </li>
-            <li>
+            <li className="px-4">
               <NavLink
                 className={({ isActive }) => (isActive ? "activado" : "group")}
                 to="/politicas"
@@ -101,13 +121,13 @@ export const RouterPrincipal = () => {
                   className="bigred"
                   color={"#007bff"}
                 />
-                <span className="absolute w-auto p-2 ym-2 min-w-max left-16 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                <span className="absolute w-auto p-2  z-50 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
                   Políticas
                 </span>
               </NavLink>
             </li>
-          </nav>
-        </ul>
+          </ul>
+        </nav>
 
         <Routes>
           <Route path="/" element={<Inicio />} />

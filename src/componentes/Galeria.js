@@ -18,13 +18,14 @@ export const Galeria = () => {
                 >
                   NUESTROS PRODUCTOS
                 </div>
-                <Gallery>
+                <Gallery withCaption>
                   <div className="grid gap-4 grid-cols-3 pt-10  group">
                     <Item
                       original={require("../images2/image1.jpg")}
                       thumbnail={require("../images2/image1.jpg")}
                       width="700"
                       height="700"
+                      caption="<h1>CLORO 3N 1 LITRO</h1>"
                     >
                       {({ ref, open }) => (
                         <div className="  border-[1px]  border-black rounded">

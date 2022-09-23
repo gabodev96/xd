@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AnimatedPage } from "./AnimatedPage";
+import axios from "axios";
 
 export const Contacto = () => {
   const [input, setInput] = useState({
@@ -20,7 +21,14 @@ export const Contacto = () => {
   }
   function handleClick(event) {
     event.preventDefault();
-    console.log(input);
+    const newNote = {
+      nombre: input.nombre,
+      correo: input.correo,
+      phone: input.phone,
+      message: input.message,
+    };
+
+    axios.post("http://localhost:3000/contacto", newNote);
   }
 
   return (

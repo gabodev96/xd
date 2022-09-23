@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
+  /*useEffect(() => {
     const notify = () =>
       toast.info("Usa la barra de navegación para desplazarte", {
         position: toast.POSITION.TOP_CENTER,
@@ -15,7 +15,7 @@ function App() {
       });
 
     notify();
-  }, []);
+  }, []);*/
   return (
     <>
       <nav className="navbare flex  lg:hidden xl:hidden border-b border-black">
@@ -55,7 +55,7 @@ function App() {
           </ul>
         </div>
       </nav>
-      <div className="flex h-screen w-full ">
+      <div className="flex flex-col h-screen w-full ">
         <RouterPrincipal />
         <ToastContainer className="hidden lg:flex md:flex xl:flex" />
       </div>

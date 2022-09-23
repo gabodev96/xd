@@ -7,7 +7,7 @@ import { AnimatedPage } from "./AnimatedPage";
 export const Nosotros = () => {
   return (
     <AnimatedPage>
-      <div className="flex  w-screen h-full flex-col  bg-gray-300 lg:pr-24">
+      <div className="flex  w-screen h-full flex-col  bg-gray-300 ">
         <div className="flex">
           <Mision />
           <Vision />

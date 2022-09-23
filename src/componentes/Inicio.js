@@ -9,21 +9,21 @@ export const Inicio = () => {
       <Carousel variant="dark" className="-z-10 md:-z-10 lg:z-0 xl:z0">
         <Carousel.Item>
           <img
-            className="w-screen h-screen object-cover"
+            className="w-screen h-screen object-cover lg:object-fill"
             src={require("../bannerimages/banner.png")}
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="w-screen h-screen object-cover"
+            className="w-screen h-screen object-cover lg:object-fill"
             src={require("../bannerimages/banner.png")}
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="w-screen h-screen object-cover"
+            className="w-screen h-screen object-cover lg:object-fill"
             src={require("../bannerimages/banner.png")}
             alt="Third slide"
           />

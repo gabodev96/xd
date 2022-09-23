@@ -4,7 +4,7 @@ import { CenterComponent } from "../componentsPolitics/CenterComponent";
 export const Politics = () => {
   return (
     <>
-      <div className="w-screen h-screen bg-white flex lg:p-16 lg:pr-40   ">
+      <div className="w-screen h-screen bg-gray-400 flex lg:p-16 lg:pr-20   ">
         <CenterComponent />
       </div>
     </>
