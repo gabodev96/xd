@@ -11,7 +11,7 @@ export const Vision = () => {
           alt=""
         />
       </div>
-      <div className=" text-justify mt-2 md:mt-2 flex overflow-hidden mx-2  lg:mx-24 ">
+      <div className=" text-justify tracking-tighter	 mt-2 md:mt-2 flex overflow-hidden mx-2  lg:mx-24 ">
         <p className="font-baloo font-bold text-xs md:text-sm lg:text-lg">
           Ser la Empresa líder a nivel nacional en producción, comercialización
           y distribución de Velas, Velones, Detergentes, ofreciendo la mejor y

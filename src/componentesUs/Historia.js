@@ -12,7 +12,7 @@ export const Historia = () => {
             alt=""
           />
         </div>
-        <p className="text-justify overflow-hidden font-bold font-baloo mt-2  mx-2 lg:mx-96">
+        <p className="text-justify  overflow-hidden tracking-tighter mt-2  mx-2 lg:mx-96 font-baloo font-bold text-xs md:text-sm lg:text-lg">
           So I started to walk into the water. I won't lie to you boys, I was
           terrified. But I pressed on, and as I made my way past the breakers a
           strange calm came over me. I don't know if it was divine intervention

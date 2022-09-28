@@ -15,7 +15,7 @@ function App() {
   }, []);*/
   return (
     <>
-      <nav className="navbare flex  lg:hidden xl:hidden border-b border-black">
+      <nav className="navbare flex  lg:hidden xl:hidden border-b border-black top-0 sticky">
         <div className="navbare-contenedor contenedor">
           <input type="checkbox" name="" id="" />
           <div className="hamburger-lines">

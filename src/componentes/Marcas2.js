@@ -49,10 +49,7 @@ export const Marcas2 = () => {
       <br />
       <br />
       <div>
-        <button
-          className="rounded bg-red-500 hover:bg-gray-500 px-2 py-2 border-2 border-black text-white"
-          onClick={onClick}
-        >
+        <button className="btn btn-danger" onClick={onClick}>
           {mostrar ? "Ocultar" : "VER MAS"}
         </button>
       </div>

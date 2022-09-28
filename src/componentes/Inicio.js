@@ -10,21 +10,21 @@ export const Inicio = () => {
         <Carousel.Item>
           <img
             className="w-screen h-screen object-cover lg:object-fill"
-            src={require("../bannerimages/banner.png")}
+            src="https://picsum.photos/1920/1080"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="w-screen h-screen object-cover lg:object-fill"
-            src={require("../bannerimages/banner.png")}
+            src="https://picsum.photos/1920/1079"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="w-screen h-screen object-cover lg:object-fill"
-            src={require("../bannerimages/banner.png")}
+            src="https://picsum.photos/1920/1078"
             alt="Third slide"
           />
         </Carousel.Item>
