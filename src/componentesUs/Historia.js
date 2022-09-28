@@ -17,7 +17,7 @@ export const Historia = () => {
           terrified. But I pressed on, and as I made my way past the breakers a
           strange calm came over me. I don't know if it was divine intervention
           or the kinship of all living things but I tell you Jerry at that
-          moment, I was a marine biologist.
+          moment, I was a marine biologist
         </p>
       </div>
     </>
