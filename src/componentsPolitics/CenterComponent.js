@@ -11,22 +11,22 @@ export const CenterComponent = () => {
             </h2>
             <ul class="text-gray-500 dark:text-gray-400">
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   About
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Careers
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Brand Center
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Blog
                 </a>
               </li>
@@ -38,22 +38,22 @@ export const CenterComponent = () => {
             </h2>
             <ul class="text-gray-500 dark:text-gray-400">
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Discord Server
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Twitter
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Facebook
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Contact Us
                 </a>
               </li>
@@ -65,17 +65,17 @@ export const CenterComponent = () => {
             </h2>
             <ul class="text-gray-500 dark:text-gray-400">
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Privacy Policy
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Licensing
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Terms &amp; Conditions
                 </a>
               </li>
@@ -87,22 +87,22 @@ export const CenterComponent = () => {
             </h2>
             <ul class="text-gray-500 dark:text-gray-400">
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   iOS
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Android
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   Windows
                 </a>
               </li>
               <li class="mb-4">
-                <a href="#" class="no-underline">
+                <a href="/inicio" class="no-underline">
                   MacOS
                 </a>
               </li>
@@ -116,7 +116,7 @@ export const CenterComponent = () => {
           </span>
           <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
             <a
-              href="#"
+              href="/inicio"
               class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -134,7 +134,7 @@ export const CenterComponent = () => {
               <span class="sr-only">Facebook page</span>
             </a>
             <a
-              href="#"
+              href="/inicio"
               class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -152,7 +152,7 @@ export const CenterComponent = () => {
               <span class="sr-only">Instagram page</span>
             </a>
             <a
-              href="#"
+              href="/inicio"
               class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -166,7 +166,7 @@ export const CenterComponent = () => {
               <span class="sr-only">Twitter page</span>
             </a>
             <a
-              href="#"
+              href="/inicio"
               class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -184,7 +184,7 @@ export const CenterComponent = () => {
               <span class="sr-only">GitHub account</span>
             </a>
             <a
-              href="#"
+              href="/inicio"
               class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <svg

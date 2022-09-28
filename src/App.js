@@ -1,10 +1,7 @@
 import "./App.css";
 
 import { RouterPrincipal } from "./routers/RouterPrincipal";
-
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useEffect } from "react";
 
 function App() {
   /*useEffect(() => {
@@ -57,7 +54,6 @@ function App() {
       </nav>
       <div className="flex flex-col h-screen w-full ">
         <RouterPrincipal />
-        <ToastContainer className="hidden lg:flex md:flex xl:flex" />
       </div>
     </>
   );

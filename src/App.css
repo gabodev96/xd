@@ -333,3 +333,13 @@ textarea {
     overflow-y: auto;
   }
 }
+
+#ig {
+  text-decoration: none !important;
+  color: black;
+}
+
+.cicons:hover {
+  transform: scale(1.5);
+  padding: 5px;
+}

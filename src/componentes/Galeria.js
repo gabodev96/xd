@@ -43,10 +43,7 @@ export const Galeria = () => {
                                 <p className="text-xs">Presentación 1L</p>
                               </div>
                               <div className="flex items-center">
-                                <img
-                                  src="imagenes/bookmark.svg"
-                                  alt="bookmark"
-                                />
+                                <img src="" alt="bookmark" />
                               </div>
                             </div>
                           </div>
@@ -75,10 +72,7 @@ export const Galeria = () => {
                                 <p className="text-xs">Presentación 1L</p>
                               </div>
                               <div className="flex items-center">
-                                <img
-                                  src="imagenes/bookmark.svg"
-                                  alt="bookmark"
-                                />
+                                <img src="" alt="bookmark" />
                               </div>
                             </div>
                           </div>
@@ -107,10 +101,7 @@ export const Galeria = () => {
                                 <p className="text-xs">Presentación 1L</p>
                               </div>
                               <div className="flex items-center">
-                                <img
-                                  src="imagenes/bookmark.svg"
-                                  alt="bookmark"
-                                />
+                                <img src="" alt="bookmark" />
                               </div>
                             </div>
                           </div>
@@ -139,10 +130,7 @@ export const Galeria = () => {
                                 <p className="text-xs">Presentación 1L</p>
                               </div>
                               <div className="flex items-center">
-                                <img
-                                  src="imagenes/bookmark.svg"
-                                  alt="bookmark"
-                                />
+                                <img src="" alt="bookmark" />
                               </div>
                             </div>
                           </div>
@@ -171,10 +159,7 @@ export const Galeria = () => {
                                 <p className="text-xs">Presentación 1L</p>
                               </div>
                               <div className="flex items-center">
-                                <img
-                                  src="imagenes/bookmark.svg"
-                                  alt="bookmark"
-                                />
+                                <img src="" alt="bookmark" />
                               </div>
                             </div>
                           </div>
@@ -203,10 +188,7 @@ export const Galeria = () => {
                                 <p className="text-xs">Presentación 1L</p>
                               </div>
                               <div className="flex items-center">
-                                <img
-                                  src="imagenes/bookmark.svg"
-                                  alt="bookmark"
-                                />
+                                <img src="" alt="bookmark" />
                               </div>
                             </div>
                           </div>

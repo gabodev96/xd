@@ -38,7 +38,7 @@ export const RouterPrincipal = () => {
           <div>
             <img
               src={require("../imagenesbrand/200x200produ3n.png")}
-              className="bg-white rounded-full w-1/6 border border-red-500"
+              className="bg-white  rounded-full w-1/4 border border-red-500"
               alt=""
             />
           </div>
