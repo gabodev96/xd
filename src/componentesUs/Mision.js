@@ -12,10 +12,12 @@ export const Mision = () => {
         />
       </div>
       <div className=" text-justify mt-2 md:mt-2 flex overflow-hidden mx-2  lg:mx-24 ">
-        <p className="font-baloo font-bold">
-          So I started to walk into the water. I won't lie to you boys, I was
-          terrified. But I pressed on, and as I made my way past the breakers a
-          strange calm came over me.
+        <p className="font-baloo font-bold text-xs md:text-sm lg:text-lg">
+          Satisfacer la demanda nacional e internacional en la línea de velas,
+          velones, detergentes atendiendo a los estándares de calidad,
+          oportunidad y precio; fortaleciendo el sistema socio-productivo del
+          país, asegurando la mayor estabilidad a su personal y la máxima
+          rentabilidad a los accionistas.
         </p>
       </div>
     </div>

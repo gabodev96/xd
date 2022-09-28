@@ -6,11 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const Inicio = () => {
   return (
     <AnimatedPage>
-      <Carousel
-        variant="dark"
-        className="-z-10 md:-z-10 lg:z-0 xl:z0"
-        style={{ zIndex: 1 }}
-      >
+      <Carousel variant="dark" className="-z-10 md:-z-10 lg:z-0 xl:z0">
         <Carousel.Item>
           <img
             className="w-screen h-screen object-cover lg:object-fill"
