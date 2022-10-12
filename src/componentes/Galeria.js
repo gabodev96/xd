@@ -1,8 +1,15 @@
 import React from "react";
 import { AnimatedPage } from "./AnimatedPage";
 import { misObjetos } from "../Data/Data";
+import { useState } from "react";
 
 export const Galeria = () => {
+  const [popupContent, setpopupContent] = useState([]);
+  const [popupTogle, setpopupTogle] = useState(false);
+  const changeContent = (productos) => {
+    setpopupContent([productos]);
+    setpopupTogle(!popupTogle);
+  };
   return (
     <AnimatedPage>
       <>
@@ -24,14 +31,44 @@ export const Galeria = () => {
                         <a href={productos.ruta}>
                           <img
                             src={productos.original}
-                            className="w-72  hover:opacity-70  border-[1px] border-black rounded"
+                            className="w-52  hover:opacity-70  border-[1px] border-black rounded"
                             alt="{title}"
                           />
                         </a>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => changeContent(productos)}
+                        >
+                          detalles
+                        </button>
                       </div>
                     </div>
                   ))}
                 </div>
+                {popupTogle && (
+                  <div className="pop_up_container">
+                    <div className="pop_up_body rounded h-50">
+                      <div className="pop_up_header">
+                        <button
+                          className="text-black bg-red-500 p-2 rounded"
+                          onClick={changeContent}
+                        >
+                          X
+                        </button>
+                      </div>
+                      <div className="pop_up_content">
+                        {popupContent.map((pop) => {
+                          return (
+                            <div className="pop_up_card text-center">
+                              <p> tipo: {pop.tipo}</p>
+                              <img src={pop.img} className="w-45 h-40 pl-10" />
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
