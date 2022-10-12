@@ -2,8 +2,8 @@
   "name": "xd",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.4",
@@ -26,6 +26,7 @@
     "react-toastify": "^9.0.8",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://www.velas3n.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

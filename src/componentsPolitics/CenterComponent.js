@@ -3,22 +3,22 @@ import Pdf from "./PoliticasdePrivacidad.pdf";
 
 export const CenterComponent = () => {
   return (
-    <div className="bg-red-500 h-full flex w-screen rounded-lg  justify-center m-auto">
+    <div className="bg-white h-full md:h-4/5  flex w-screen rounded-lg  justify-center m-auto">
       <footer class="bg-white dark:bg-gray-900 rounded-md w-full">
         <div class="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
           <div>
             <h2 class="mb-6 text-sm font-baloo font-semibold text-gray-500 uppercase dark:text-gray-400">
-              Compañia
+              La Empresa
             </h2>
             <ul class="text-gray-500 dark:text-gray-400">
               <li class="mb-4">
-                <a href="/inicio" class="font-baloo no-underline">
+                <a href="/nosotros" class="font-baloo no-underline">
                   Nosotros
                 </a>
               </li>
 
               <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
+                <a href="/marcas" class="no-underline font-baloo">
                   Marcas
                 </a>
               </li>
@@ -30,17 +30,23 @@ export const CenterComponent = () => {
             </h2>
             <ul class="text-gray-500 dark:text-gray-400">
               <li class="mb-4">
-                <a href="/inicio" class="font-baloo no-underline">
+                <a
+                  href="https://twitter.com/velas3nca"
+                  class="font-baloo no-underline"
+                >
                   Twitter
                 </a>
               </li>
               <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
+                <a
+                  href="https://www.facebook.com/Productos3N"
+                  class="no-underline font-baloo"
+                >
                   Facebook
                 </a>
               </li>
               <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
+                <a href="/contacto" class="no-underline font-baloo">
                   Contactanos
                 </a>
               </li>
@@ -55,42 +61,15 @@ export const CenterComponent = () => {
                 <a
                   href={Pdf}
                   target="_blank"
+                  rel="noreferrer"
                   className="no-underline font-baloo"
                 >
                   Politicas de Privacidad
                 </a>
               </li>
-
               <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
-                  Terms &amp; Conditions
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400 font-baloo">
-              Descargas
-            </h2>
-            <ul class="text-gray-500 dark:text-gray-400">
-              <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
-                  iOS
-                </a>
-              </li>
-              <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
-                  Android
-                </a>
-              </li>
-              <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
-                  Windows
-                </a>
-              </li>
-              <li class="mb-4">
-                <a href="/inicio" class="no-underline font-baloo">
-                  MacOS
+                <a href="https://lordicon.com/" class="no-underline font-baloo">
+                  Iconos
                 </a>
               </li>
             </ul>
@@ -102,7 +81,7 @@ export const CenterComponent = () => {
           </span>
           <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
             <a
-              href="/inicio"
+              href="https://www.facebook.com/Productos3N"
               class="text-gray-400 hover:text-gray-900 dark:hover:tefxt-white"
             >
               <svg
@@ -120,7 +99,7 @@ export const CenterComponent = () => {
               <span class="sr-only">Facebook page</span>
             </a>
             <a
-              href="/inicio"
+              href="https://instagram.com/productos3n?igshid=YmMyMTA2M2Y="
               class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -138,7 +117,7 @@ export const CenterComponent = () => {
               <span class="sr-only">Instagram page</span>
             </a>
             <a
-              href="/inicio"
+              href="https://twitter.com/velas3nca"
               class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
               <svg

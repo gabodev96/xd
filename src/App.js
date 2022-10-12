@@ -52,7 +52,7 @@ function App() {
           </ul>
         </div>
       </nav>
-      <div className="flex flex-col h-screen w-full ">
+      <div className="flex flex-col  h-screen w-full ">
         <RouterPrincipal />
       </div>
     </>

@@ -16,13 +16,17 @@ import { Galeria } from "../componentes/Galeria";
 import { Marcas } from "../componentes/Marcas";
 import { Nosotros } from "../componentes/Nosotros";
 import { Politics } from "../componentes/Politics";
+import { Tentacion } from "../componentes/Tentacion";
+import SuperCleaner from "../componentes/SuperCleaner";
+import Religiosa from "../componentes/Religiosa";
+import Velas from "../componentes/Velas";
 
 export const RouterPrincipal = () => {
   return (
     <>
       <BrowserRouter>
         <nav
-          className=" flex flex-wrap
+          className=" flex-wrap
           items-center
           justify-between
           w-full
@@ -137,6 +141,10 @@ export const RouterPrincipal = () => {
           <Route path="/galeria" element={<Galeria />} />
           <Route path="/marcas" element={<Marcas />} />
           <Route path="/politicas" element={<Politics />} />
+          <Route path="/tentacion" element={<Tentacion />} />
+          <Route path="/supercleaner" element={<SuperCleaner />} />
+          <Route path="/religiosa" element={<Religiosa />} />
+          <Route path="/velas" element={<Velas />} />
         </Routes>
       </BrowserRouter>
     </>

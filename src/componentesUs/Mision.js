@@ -3,11 +3,11 @@ import React from "react";
 export const Mision = () => {
   return (
     <div className=" w-3/6 lg:m-2 text-center font-baloo  pt-2 rounded contacto bg-white h-80  m-2">
-      <h1 className="font-baloo pt-2 font-semibold">Mision</h1>
+      <h1 className="font-baloo pt-2 font-semibold">Misión</h1>
       <div className="flex  justify-center ">
         <img
           src={require("../images2/misiones.gif")}
-          className="w-10 md:w-20 lg:w-32 rounded-full"
+          className="w-10 md:w-20 lg:w-20 rounded-full"
           alt=""
         />
       </div>

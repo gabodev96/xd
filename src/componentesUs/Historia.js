@@ -8,16 +8,16 @@ export const Historia = () => {
         <div className="flex  justify-center ">
           <img
             src={require("../images2/book.gif")}
-            className="w-2/12 md:w-20 lg:w-32  rounded-full "
+            className="w-2/12 md:w-20 lg:w-20  rounded-full "
             alt=""
           />
         </div>
         <p className="text-justify  overflow-hidden tracking-tighter mt-2  mx-2 lg:mx-96 font-baloo font-bold text-xs md:text-sm lg:text-lg">
-          So I started to walk into the water. I won't lie to you boys, I was
-          terrified. But I pressed on, and as I made my way past the breakers a
-          strange calm came over me. I don't know if it was divine intervention
-          or the kinship of all living things but I tell you Jerry at that
-          moment, I was a marine biologist
+          Fundada en el año 1997 y hoy 25 años transcurridos somos una empresa
+          que ha venido creciendo en expansión, consolidación y con miras a
+          posicionar a la empresa en el mercado industrial de fabricación de
+          Velas, Velones tanto para el territorio Nacional e Internacional, así
+          como productos de limpieza.
         </p>
       </div>
     </>
