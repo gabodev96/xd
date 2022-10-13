@@ -46,17 +46,20 @@ export const Galeria = () => {
                     </div>
                   ))}
                 </div>
+
                 {encendidoModal && (
                   <div
                     className=" pop_up_container shadow-2xl"
                     onClick={cambiarContenido}
                   >
-                    <div className="pop_up_body rounded h-96 w-96 lg:h-72 bg-white lg:bg-blue-500">
-                      <div className="pop_up_header">
-                        <button className="text-black bg-red-500 hover:opacity-80 p-2 rounded-sm">
-                          X
-                        </button>
-                      </div>
+                    <div
+                      className="pop_up_body rounded h-96 w-96 lg:h-72 bg-white lg:bg-blue-500"
+                      onClick={(e) => {
+                        // do not close modal if anything inside modal content is clicked
+                        e.stopPropagation();
+                      }}
+                    >
+                      <div className="pop_up_header"></div>
                       <div className="pop_up_content">
                         {modalContenido.map((pop) => {
                           return (
@@ -87,6 +90,17 @@ export const Galeria = () => {
                                         {" "}
                                         tipo: {pop.tipo}
                                       </p>
+                                      <div className="flex">
+                                        <button
+                                          onClick={cambiarContenido}
+                                          className="btn btn-danger mt-14 2xl:mt-20"
+                                        >
+                                          Cerrar
+                                        </button>
+                                        <button className="btn btn-primary ml-2 mt-14 2xl:mt-20">
+                                          COMPRAR
+                                        </button>
+                                      </div>
                                     </div>
                                   </div>
                                 )}

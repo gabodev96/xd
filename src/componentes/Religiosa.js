@@ -15,13 +15,13 @@ const Religiosa = () => {
                   </h1>
                 </div>
 
-                <div className="grid gap-4 grid-cols-3 pt-1  group">
+                <div className="grid gap-4 grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 pt-1  group">
                   {lineaReligiosa.map((productos) => (
                     <div>
                       <div className=" rounded">
                         <img
                           src={productos.original}
-                          className="w-44   border-[1px] border-black rounded"
+                          className="w-44  2xl:w-72 border-[1px] border-black rounded"
                           alt="{title}"
                         />
                       </div>
