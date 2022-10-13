@@ -18,9 +18,8 @@ const Religiosa = () => {
                 <Gallery>
                   <div className="grid gap-4 grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 pt-1  group">
                     {lineaReligiosa.map((productos) => (
-                      <div>
+                      <div key={productos.key}>
                         <Item
-                          key={productos.key}
                           original={productos.original}
                           width="500"
                           height="500"
@@ -32,10 +31,10 @@ const Religiosa = () => {
                                 className="w-44  z-50 2xl:w-72 border-[1px] border-black rounded"
                                 alt="{title}"
                               />
-                              <div class="overlay flex">
+                              <div className="overlay flex">
                                 <img
                                   src={require("../images2/lupa.png")}
-                                  className="justify-center items-center text-center p-20 "
+                                  className="justify-center items-center object-cover text-center lg:m-14 2xl:m-28 "
                                   ref={ref}
                                   onClick={open}
                                 />

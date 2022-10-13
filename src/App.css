@@ -334,6 +334,14 @@ textarea {
     overflow-y: auto;
   }
 }
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+  html {
+    overflow-y: auto;
+  }
+}
 
 #ig {
   text-decoration: none !important;

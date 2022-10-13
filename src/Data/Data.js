@@ -175,7 +175,7 @@ export const lineaReligiosa = [
     ruta: "/religiosa",
   },
   {
-    key: 25,
+    key: 26,
     img: require("../images2/RELIGIOSAS/MESA-VIRGEN-DE-COROMOTO.png"),
     original: require("../images2/RELIGIOSAS/MESA-VIRGEN-DE-COROMOTO.png"),
     tipo: "citro",
