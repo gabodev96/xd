@@ -2,13 +2,14 @@ import React from "react";
 import { AnimatedPage } from "./AnimatedPage";
 import { misObjetos } from "../Data/Data";
 import { useState } from "react";
+import { Gallery, Item } from "react-photoswipe-gallery";
 
 export const Galeria = () => {
-  const [popupContent, setpopupContent] = useState([]);
-  const [popupTogle, setpopupTogle] = useState(false);
-  const changeContent = (productos) => {
-    setpopupContent([productos]);
-    setpopupTogle(!popupTogle);
+  const [modalContenido, setmodalContenido] = useState([]);
+  const [encendidoModal, setencendidoModal] = useState(false);
+  const cambiarContenido = (productos) => {
+    setmodalContenido([productos]);
+    setencendidoModal(!encendidoModal);
   };
   return (
     <AnimatedPage>
@@ -37,7 +38,7 @@ export const Galeria = () => {
                         </a>
                         <button
                           className="btn btn-danger"
-                          onClick={() => changeContent(productos)}
+                          onClick={() => cambiarContenido(productos)}
                         >
                           detalles
                         </button>
@@ -45,24 +46,52 @@ export const Galeria = () => {
                     </div>
                   ))}
                 </div>
-                {popupTogle && (
-                  <div className="pop_up_container">
-                    <div className="pop_up_body rounded h-50">
+                {encendidoModal && (
+                  <div
+                    className=" pop_up_container shadow-2xl"
+                    onClick={cambiarContenido}
+                  >
+                    <div className="pop_up_body rounded h-96 w-96 lg:h-72 bg-white lg:bg-blue-500">
                       <div className="pop_up_header">
-                        <button
-                          className="text-black bg-red-500 p-2 rounded"
-                          onClick={changeContent}
-                        >
+                        <button className="text-black bg-red-500 hover:opacity-80 p-2 rounded-sm">
                           X
                         </button>
                       </div>
                       <div className="pop_up_content">
-                        {popupContent.map((pop) => {
+                        {modalContenido.map((pop) => {
                           return (
-                            <div className="pop_up_card text-center">
-                              <p> tipo: {pop.tipo}</p>
-                              <img src={pop.img} className="w-45 h-40 pl-10" />
-                            </div>
+                            <Gallery>
+                              <Item
+                                key={pop.key}
+                                original={pop.original}
+                                width="500"
+                                height="500"
+                              >
+                                {({ ref, open }) => (
+                                  <div className="flex pt-6 pop_up_card text-center">
+                                    <img
+                                      src={pop.img}
+                                      onClick={open}
+                                      className="w-45 h-40 ml-2 shadow-2xl border-[1px] border-gray-400 "
+                                    />
+                                    <div className="pl-2">
+                                      <p className="font-baloo text-md">
+                                        {" "}
+                                        tipo: {pop.tipo}
+                                      </p>
+                                      <p className="font-baloo  text-md">
+                                        {" "}
+                                        tipo: {pop.tipo}
+                                      </p>
+                                      <p className="font-baloo  text-md">
+                                        {" "}
+                                        tipo: {pop.tipo}
+                                      </p>
+                                    </div>
+                                  </div>
+                                )}
+                              </Item>
+                            </Gallery>
                           );
                         })}
                       </div>
