@@ -90,15 +90,15 @@ export const Galeria = () => {
                                         {" "}
                                         tipo: {pop.tipo}
                                       </p>
-                                      <div className="flex">
+                                      <div className="flex h-22">
                                         <button
                                           onClick={cambiarContenido}
                                           className="btn btn-danger mt-14 2xl:mt-20"
                                         >
                                           Cerrar
                                         </button>
-                                        <button className="btn btn-primary ml-2 mt-14 2xl:mt-20">
-                                          COMPRAR
+                                        <button className="btn btn-primary ml-2 mt-14 2xl:mt-20 ">
+                                          AÑADIR AL CARRITO
                                         </button>
                                       </div>
                                     </div>
