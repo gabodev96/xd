@@ -59,53 +59,40 @@ export const Galeria = () => {
                         e.stopPropagation();
                       }}
                     >
-                      <div className="pop_up_header"></div>
                       <div className="pop_up_content">
                         {modalContenido.map((pop) => {
                           return (
-                            <Gallery>
-                              <Item
-                                key={pop.key}
-                                original={pop.original}
-                                width="500"
-                                height="500"
-                              >
-                                {({ ref, open }) => (
-                                  <div className="flex pt-6 pop_up_card text-center">
-                                    <img
-                                      src={pop.img}
-                                      onClick={open}
-                                      className="w-45 h-40 ml-2 shadow-2xl border-[1px] border-gray-400 "
-                                    />
-                                    <div className="pl-2">
-                                      <p className="font-baloo text-md">
-                                        {" "}
-                                        tipo: {pop.tipo}
-                                      </p>
-                                      <p className="font-baloo  text-md">
-                                        {" "}
-                                        tipo: {pop.tipo}
-                                      </p>
-                                      <p className="font-baloo  text-md">
-                                        {" "}
-                                        tipo: {pop.tipo}
-                                      </p>
-                                      <div className="flex h-22">
-                                        <button
-                                          onClick={cambiarContenido}
-                                          className="btn btn-danger mt-14 2xl:mt-20"
-                                        >
-                                          Cerrar
-                                        </button>
-                                        <button className="btn btn-primary ml-2 mt-14 2xl:mt-20 ">
-                                          AÑADIR AL CARRITO
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                )}
-                              </Item>
-                            </Gallery>
+                            <div className="flex pt-6 pop_up_card text-center">
+                              <img
+                                src={pop.img}
+                                className="w-45 h-40 ml-2 shadow-2xl border-[1px] border-gray-400 "
+                              />
+                              <div className="pl-2">
+                                <p className="font-baloo text-md">
+                                  {" "}
+                                  tipo: {pop.tipo}
+                                </p>
+                                <p className="font-baloo  text-md">
+                                  {" "}
+                                  tipo: {pop.tipo}
+                                </p>
+                                <p className="font-baloo  text-md">
+                                  {" "}
+                                  tipo: {pop.tipo}
+                                </p>
+                                <div className="flex h-22">
+                                  <button
+                                    onClick={cambiarContenido}
+                                    className="btn btn-danger mt-14 2xl:mt-20"
+                                  >
+                                    Cerrar
+                                  </button>
+                                  <button className="btn btn-primary ml-2 mt-14 2xl:mt-20 ">
+                                    AÑADIR AL CARRITO
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                           );
                         })}
                       </div>
