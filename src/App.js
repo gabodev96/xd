@@ -1,18 +1,40 @@
 import "./App.css";
+import React from "react";
 
-import { RouterPrincipal } from "./routers/RouterPrincipal";
 import "react-toastify/dist/ReactToastify.css";
+import {
+  Routes,
+  Route,
+  BrowserRouter,
+  useNavigate,
+  NavLink,
+} from "react-router-dom";
+
+import { Contacto } from "./componentes/Contacto";
+import { Inicio } from "./componentes/Inicio";
+
+import { Marcas } from "./componentes/Marcas";
+import { Nosotros } from "./componentes/Nosotros";
+import { Politics } from "./componentes/Politics";
+
+import Religiosa from "./componentes/Religiosa";
+
+import Carrito from "./componentes/Carrito";
+import Header from "./componentes/Header";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { CartProvider } from "./context/CartContext";
+import { Modal } from "./componentes/Modal";
+
+import { Tentacion } from "./componentes/Tentacion";
+import Productos from "./componentes/Productos";
+import { Galeria } from "./componentes/GaleriaDeprecated";
+import { compose } from "@mui/system";
+export const CartContext = React.createContext("");
+console.log("CartContext:", CartContext);
 
 function App() {
-  /*useEffect(() => {
-    const notify = () =>
-      toast.info("Usa la barra de navegación para desplazarte", {
-        position: toast.POSITION.TOP_CENTER,
-        autoClose: 60000,
-      });
+  const navigate = useNavigate();
 
-    notify();
-  }, []);*/
   return (
     <>
       <nav className="navbare flex  lg:hidden xl:hidden border-b border-black top-0 sticky">
@@ -25,35 +47,85 @@ function App() {
           </div>
           <ul className="menu-items ">
             <li>
-              <a href="/inicio" className="font-baloo">
+              <NavLink to="/inicio" className="font-baloo ">
                 Inicio
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/nosotros" className="font-baloo">
+              <a onClick={() => navigate("/nosotros")} className="font-baloo">
                 Nosotros
               </a>
             </li>
             <li>
-              <a href="/contacto" className="font-baloo">
+              <a onClick={() => navigate("/contacto")} className="font-baloo">
                 Contacto
               </a>
             </li>
             <li>
-              <a href="/galeria" className="font-baloo">
+              <a
+                onClick={() => navigate("/productos/galeria")}
+                className="font-baloo"
+              >
                 Galeria
               </a>
             </li>
             <li>
-              <a href="/marcas" className="font-baloo">
+              <a onClick={() => navigate("/marcas")} className="font-baloo">
                 Marcas
               </a>
             </li>
           </ul>
         </div>
       </nav>
+
+      <FloatingWhatsApp
+        accountName="Velas 3N Soporte"
+        avatar={require("./imagenesbrand/3nchat.png")}
+        allowEsc
+        statusMessage="En Linea"
+        phoneNumber="5804126952114"
+        chatMessage={
+          <>
+            Hola <br />
+            <br /> ¿Cómo podemos ayudarte?
+          </>
+        }
+        placeholder="Escribe un mensaje"
+        allowClickAway
+        notification
+        notificationDelay="5"
+        notificationSound={true}
+      />
       <div className="flex flex-col  h-screen w-full ">
-        <RouterPrincipal />
+        <CartProvider>
+          <Header />
+
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/inicio" element={<Inicio />} />
+            <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/contacto" element={<Contacto />} />
+
+            <Route path="/marcas" element={<Marcas />} />
+            <Route path="/politicas" element={<Politics />} />
+            <Route path="/tentacion" element={<Tentacion />} />
+
+            <Route path="/pop" element={<Modal initial={1} stock={99} />} />
+            <Route
+              path="/productos"
+              element={
+                <div className="contacto w-screen h-screen">
+                  <Productos />
+                </div>
+              }
+            >
+              <Route path="galeria" element={<Religiosa />} />
+              <Route path="add" element={<Galeria />} />
+              <Route path="search" element={<Tentacion />} />
+            </Route>
+            <Route path="/carrito" element={<Carrito />} />
+          </Routes>
+        </CartProvider>
       </div>
     </>
   );

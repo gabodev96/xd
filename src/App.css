@@ -200,7 +200,7 @@ textarea {
 }
 
 .navbare a:hover {
-  color: #117964;
+  color: blue;
 }
 
 @media (max-width: 768px) {
@@ -402,4 +402,8 @@ textarea {
 .image {
   position: relative;
   display: inline-block;
+}
+
+.btn-primary {
+  margin-right: 10px;
 }
