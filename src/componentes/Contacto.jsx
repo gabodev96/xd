@@ -66,6 +66,7 @@ export const Contacto = () => {
                   name="subject"
                   className="hidden"
                   value="CORREO PAGINA WEB"
+                  readOnly
                 />
                 <input
                   type="text"

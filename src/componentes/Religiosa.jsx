@@ -20,6 +20,7 @@ const Religiosa = () => {
     });
     getData.then((res) => setData(res));
   }, []);
+
   return (
     <>
       <AnimatedPage>
