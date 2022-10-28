@@ -110,7 +110,7 @@ function App() {
             <Route path="/politicas" element={<Politics />} />
             <Route path="/tentacion" element={<Tentacion />} />
 
-            <Route path="/pop" element={<Modal initial={1} stock={99} />} />
+            <Route path="/pop" element={<Modal />} />
             <Route
               path="/productos"
               element={

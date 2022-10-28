@@ -62,7 +62,7 @@ const Religiosa = () => {
 
                         <div className="flex justify-center pt-2 text-sm">
                           <button
-                            className="btn btn-danger"
+                            className="botoncito"
                             onClick={() => cambiarContenido(productos)}
                           >
                             VER DETALLES

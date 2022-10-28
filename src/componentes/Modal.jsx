@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { FaCartPlus } from "react-icons/fa";
 import { ImExit } from "react-icons/im";
-import { misObjetos } from "../Data/Datos";
+import ContadorProducts from "../ItemCount/ContadorProducts";
 
-export const Modal = ({ initial, stock, onAdd, setterOn, setterContent }) => {
-  const [count, setCount] = useState(1);
-  const decrease = () => {
-    setCount(count - 1);
+export const Modal = ({ initial, stock, setterOn, setterContent }) => {
+  const onAdd = (quantity) => {
+    console.log(`Compraste ${quantity} unidades`);
   };
-  const increase = () => {
-    setCount(count + 1);
-  };
-
   return (
     <>
       {" "}
@@ -31,7 +26,7 @@ export const Modal = ({ initial, stock, onAdd, setterOn, setterContent }) => {
             {setterContent.map((popArray) => {
               return (
                 <div
-                  className="flex pt-6 pop_up_card text-center"
+                  className="flex pt-2 pop_up_card text-center"
                   key={popArray.key}
                 >
                   <img
@@ -52,33 +47,31 @@ export const Modal = ({ initial, stock, onAdd, setterOn, setterContent }) => {
                       <span className="font-extrabold"> Precio: </span>
                       {popArray.precio}
                     </p>
-                    <div className="counter text-black">
-                      {/* 
-                      <button
-                        className="bg-red-500 p-2 rounded"
-                        disabled={count <= 1}
-                      >
-                        -
-                      </button>
-                      <span className="p-0 m-0">{count}</span>
-                      <button
-                        className="bg-blue-500 p-2 rounded ml-2"
-                        disabled={count >= 99}
-                        onClick={increase}
-                      >
-                        +
-                      </button>
-                      */}
-                      <div className="flex mt-5 justify-end ml-32">
-                        {/*comment here <button className="bg-green-500 hover:bg-green-400 p-3 rounded">
+                    <div className="text-black">
+                      <div className="-mt-5  ">
+                        <ContadorProducts
+                          initial={2}
+                          stock={1000}
+                          onAdd={onAdd}
+                        />
+                      </div>
+
+                      <div className="flex  mt-40 lg:mt-16  ml-24  justify-end">
+                        <button className="bg-green-500 hover:bg-green-400 p-3 rounded group">
                           <FaCartPlus />
+                          <span className="absolute w-auto p-2   z-50  rounded-md shadow-md text-white bg-green-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                            Comprar
+                          </span>
                         </button>
-                        */}
+
                         <button
-                          className="bg-red-500 hover:bg-red-400 p-3 rounded  mt-32 lg:mt-0"
+                          className="bg-red-500 hover:bg-red-400 p-3 rounded group  ml-2  lg:mt-0"
                           onClick={setterOn}
                         >
                           <ImExit />
+                          <span className="absolute w-auto p-2   z-50  rounded-md shadow-md text-white bg-red-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
+                            Salir
+                          </span>
                         </button>
                       </div>
                     </div>

@@ -407,3 +407,26 @@ textarea {
 .btn-primary {
   margin-right: 10px;
 }
+
+.botoncito {
+  background-color: #dc3545;
+  color: white;
+  width: 80px;
+  border-radius: 8px;
+}
+.botoncito:active {
+  background-color: #fff;
+  border-color: #a52834;
+}
+
+.botoncito:hover {
+  background-color: #bb2d3b;
+}
+
+.plus:disabled {
+  background-color: grey;
+}
+
+.minus:disabled {
+  background-color: grey;
+}
