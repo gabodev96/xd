@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import AnimateModal from "../AnimateModal/AnimateModal";
 import ContadorProducts from "../ItemCount/ContadorProducts";
 
@@ -63,6 +63,7 @@ export const Modal = ({ initial, stock, setterOn, setterContent }) => {
             </div>
           </div>
         </AnimateModal>
+        <ToastContainer />
       </div>
     </>
   );

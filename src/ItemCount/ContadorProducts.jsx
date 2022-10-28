@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaCartPlus } from "react-icons/fa";
 import { ImExit } from "react-icons/im";
-import { ToastContainer } from "react-toastify";
 
 const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
   const [count, setCount] = useState(initial);
@@ -54,7 +53,6 @@ const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
             </span>
           </button>
         </div>
-        <ToastContainer />
       </div>
     </>
   );
