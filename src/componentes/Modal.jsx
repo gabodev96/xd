@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { FaCartPlus } from "react-icons/fa";
-import { ImExit } from "react-icons/im";
+import { toast } from "react-toastify";
 import ContadorProducts from "../ItemCount/ContadorProducts";
 
 export const Modal = ({ initial, stock, setterOn, setterContent }) => {
   const onAdd = (quantity) => {
-    console.log(`Compraste ${quantity} unidades`);
+    toast.info(`${quantity} unidades añadidas al carrito`);
   };
   return (
     <>
       {" "}
       <div
-        className=" pop_up_container shadow-2xl"
+        className=" pop_up_container shadow-2xl pt-40  2xl:pt-64"
         //Background de popup, llama a encendido modal y lo convierte a false haciendo que se oculte el modal
         onClick={setterOn}
       >
         <div
-          className="pop_up_body rounded h-96 w-96 lg:h-72 bg-white lg:bg-blue-500"
+          className="pop_up_body rounded h-96 w-96 lg:h-72 bg-white"
           onClick={(e) => {
             // El modal no cierra si su contenido es clickeado
             e.stopPropagation();
@@ -47,34 +46,12 @@ export const Modal = ({ initial, stock, setterOn, setterContent }) => {
                       <span className="font-extrabold"> Precio: </span>
                       {popArray.precio}
                     </p>
-                    <div className="text-black">
-                      <div className="-mt-5  ">
-                        <ContadorProducts
-                          initial={2}
-                          stock={1000}
-                          onAdd={onAdd}
-                        />
-                      </div>
-
-                      <div className="flex  mt-40 lg:mt-16  ml-24  justify-end">
-                        <button className="bg-green-500 hover:bg-green-400 p-3 rounded group">
-                          <FaCartPlus />
-                          <span className="absolute w-auto p-2   z-50  rounded-md shadow-md text-white bg-green-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                            Comprar
-                          </span>
-                        </button>
-
-                        <button
-                          className="bg-red-500 hover:bg-red-400 p-3 rounded group  ml-2  lg:mt-0"
-                          onClick={setterOn}
-                        >
-                          <ImExit />
-                          <span className="absolute w-auto p-2   z-50  rounded-md shadow-md text-white bg-red-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                            Salir
-                          </span>
-                        </button>
-                      </div>
-                    </div>
+                    <ContadorProducts
+                      setterOn={setterOn}
+                      initial={1}
+                      stock={99}
+                      onAdd={onAdd}
+                    />
                   </div>
                 </div>
               );
