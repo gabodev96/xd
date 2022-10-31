@@ -14,6 +14,7 @@ const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
   return (
     <>
       <div className="text-black">
+        {/* 
         <div className="-mt-5  ">
           <button
             className="bg-red-500 minus p-2 rounded"
@@ -31,8 +32,10 @@ const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
             +
           </button>
         </div>
+        */}
 
-        <div className="flex  mt-40 lg:mt-16  ml-24  justify-end">
+        <div className="flex  mt-40 lg:mt-16   justify-center">
+          {/* 
           <button
             className="bg-green-500 hover:bg-green-400 active:bg-green-800 p-3 rounded group"
             onClick={() => onAdd(count)}
@@ -42,9 +45,9 @@ const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
               Comprar
             </span>
           </button>
-
+*/}
           <button
-            className="bg-red-500 hover:bg-red-400 p-3 rounded group  ml-2  lg:mt-0"
+            className="bg-red-500 hover:bg-red-400   px-5 py-3  rounded group  lg:mt-0"
             onClick={setterOn}
           >
             <ImExit />
