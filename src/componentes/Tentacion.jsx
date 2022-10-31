@@ -6,6 +6,9 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import { misObjetos } from "../Data/Datos";
 
 export const Tentacion = () => {
+  let filtrados = misObjetos;
+
+  let filtradosArray = filtrados.filter((e) => e.category === "tentacion");
   return (
     <>
       <AnimatedPage>
@@ -19,26 +22,26 @@ export const Tentacion = () => {
 
                 <Gallery withCaption>
                   <div className="grid gap-4 grid-cols-3 lg:grid-cols-6 2xl:grid-cols-3 pt-1  group">
-                    {misObjetos.map(({ key, img, ruta, original }) => (
+                    {filtradosArray.map((productos) => (
                       <Item
-                        key={key}
-                        original={original}
+                        key={productos.key}
+                        original={productos.original}
                         width="500"
                         height="500"
                       >
                         {({ ref, open }) => (
                           <div className=" rounded">
                             <img
-                              src={img}
+                              src={productos.img}
                               ref={ref}
                               onClick={open}
-                              className="w-72 lg:w-44 2xl:w-72 border-[1px] border-black rounded"
+                              className="w-72 lg:w-32 2xl:w-72 border-[1px] border-black rounded"
                               alt="{title}"
                             />
 
                             <div className="flex justify-center pt-2 text-sm">
-                              <button className="btn btn-danger text-2xl">
-                                AÑADIR AL CARRITO
+                              <button className="botoncito">
+                                VER DETALLES
                               </button>
                             </div>
                           </div>

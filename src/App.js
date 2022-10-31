@@ -27,8 +27,10 @@ import { Modal } from "./componentes/Modal";
 
 import { Tentacion } from "./componentes/Tentacion";
 import Productos from "./componentes/Productos";
-import { Galeria } from "./componentes/GaleriaDeprecated";
+
 import { compose } from "@mui/system";
+import Prueba from "./componentes/Prueba";
+import Detergentes from "./componentes/Detergentes";
 export const CartContext = React.createContext("");
 console.log("CartContext:", CartContext);
 
@@ -109,7 +111,8 @@ function App() {
             <Route path="/marcas" element={<Marcas />} />
             <Route path="/politicas" element={<Politics />} />
             <Route path="/tentacion" element={<Tentacion />} />
-
+            <Route path="/prueba" element={<Prueba />} />
+            <Route path="/detergentes" element={<Detergentes />} />
             <Route path="/pop" element={<Modal />} />
             <Route
               path="/productos"
@@ -120,8 +123,8 @@ function App() {
               }
             >
               <Route path="galeria" element={<Religiosa />} />
-              <Route path="add" element={<Galeria />} />
-              <Route path="search" element={<Tentacion />} />
+              <Route path="supercleaner" element={<Detergentes />} />
+              <Route path="tentacion" element={<Prueba />} />
             </Route>
             <Route path="/carrito" element={<Carrito />} />
           </Routes>

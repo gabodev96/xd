@@ -39,7 +39,9 @@ export const Modal = ({ initial, stock, setterOn, setterContent }) => {
                     <div className="pl-2 text-left">
                       <p className="font-baloo text-md">
                         {" "}
-                        <span className="font-extrabold">Tipo: </span>
+                        <span className="font-bold font-baloo tracking-tighter">
+                          Nombre:{" "}
+                        </span>
                         {popArray.tipo}
                       </p>
                       <p className="font-baloo  text-md">

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
+import { Link } from "react-router-dom";
 import { misObjetos } from "../Data/Datos";
 import { AnimatedPage } from "./AnimatedPage";
 import { Modal } from "./Modal";
-const Religiosa = () => {
+const Prueba = () => {
   const [modalContenido, setmodalContenido] = useState([]);
   const [encendidoModal, setencendidoModal] = useState(false);
   const cambiarContenido = (productos) => {
@@ -12,33 +13,33 @@ const Religiosa = () => {
   };
   const [data, setData] = useState([]);
 
+  let filtrados = misObjetos;
+
+  let filtradosArray = filtrados.filter((e) => e.category === "tentacion");
+
   useEffect(() => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(misObjetos);
-      }, 5000);
+        resolve(filtradosArray);
+      }, 3000);
     });
     getData.then((res) => setData(res));
   }, []);
-
-  let filtrados = misObjetos;
-
-  let filtradosArray = filtrados.filter((e) => e.all === true);
 
   return (
     <>
       <AnimatedPage>
         <Gallery withCaption>
-          <div className="w-screen h-screen ">
+          <div className=" w-screen h-screen ">
             <div className="flex  md:pt-18 lg:pt-0 justify-center w-full  h-screen">
               <div className="m-6  md:m-2">
                 <div className="flex flex-col items-center justify-center   md:space-y-0  md:mb-24 md:justify-end">
                   <h1 className="font-baloo   text-center text-6xl pt-2 ">
-                    Nuestros Productos
+                    Linea Tentación
                   </h1>
 
                   <div className="grid gap-4  grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 pt-1  group">
-                    {filtradosArray.map((productos) => (
+                    {data.map((productos) => (
                       <div key={productos.key}>
                         <div>
                           <Item
@@ -51,7 +52,7 @@ const Religiosa = () => {
                               <div className="image " ref={ref} onClick={open}>
                                 <img
                                   src={productos.original}
-                                  className="w-44  z-50 2xl:w-64  border-[1px] border-black rounded"
+                                  className="w-32  z-50 2xl:w-64  border-[1px] border-black rounded"
                                   alt="{title}"
                                 />
                                 <div className="overlay flex">
@@ -93,4 +94,4 @@ const Religiosa = () => {
   );
 };
 
-export default Religiosa;
+export default Prueba;

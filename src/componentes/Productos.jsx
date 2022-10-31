@@ -8,17 +8,17 @@ const Productos = () => {
     <AnimatedPage>
       <div className="">
         <div className="flex  justify-center pt-2  mb-2">
-          <Link to="/productos/search" className="btn btn-danger">
+          <Link to="/productos/tentacion" className="btn btn-danger">
             {" "}
             Linea Tentación{" "}
           </Link>
           <Link to="/productos/galeria" className="btn btn-danger ml-2 ">
             {" "}
-            TODO{" "}
+            Todo{" "}
           </Link>
-          <Link to="/productos/add" className="btn btn-danger ml-2">
+          <Link to="/productos/supercleaner" className="btn btn-danger ml-2">
             {" "}
-            Galeria{" "}
+            SuperCleaner{" "}
           </Link>
         </div>
         <Outlet />

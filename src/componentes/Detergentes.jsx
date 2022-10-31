@@ -3,7 +3,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import { misObjetos } from "../Data/Datos";
 import { AnimatedPage } from "./AnimatedPage";
 import { Modal } from "./Modal";
-const Religiosa = () => {
+const Detergentes = () => {
   const [modalContenido, setmodalContenido] = useState([]);
   const [encendidoModal, setencendidoModal] = useState(false);
   const cambiarContenido = (productos) => {
@@ -12,18 +12,17 @@ const Religiosa = () => {
   };
   const [data, setData] = useState([]);
 
+  let filtrados = misObjetos;
+
+  let filtradosArray = filtrados.filter((e) => e.category === "SuperCleaner");
   useEffect(() => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(misObjetos);
-      }, 5000);
+        resolve(filtradosArray);
+      }, 3000);
     });
     getData.then((res) => setData(res));
   }, []);
-
-  let filtrados = misObjetos;
-
-  let filtradosArray = filtrados.filter((e) => e.all === true);
 
   return (
     <>
@@ -34,11 +33,11 @@ const Religiosa = () => {
               <div className="m-6  md:m-2">
                 <div className="flex flex-col items-center justify-center   md:space-y-0  md:mb-24 md:justify-end">
                   <h1 className="font-baloo   text-center text-6xl pt-2 ">
-                    Nuestros Productos
+                    Linea Super Cleaner
                   </h1>
 
                   <div className="grid gap-4  grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 pt-1  group">
-                    {filtradosArray.map((productos) => (
+                    {data.map((productos) => (
                       <div key={productos.key}>
                         <div>
                           <Item
@@ -93,4 +92,4 @@ const Religiosa = () => {
   );
 };
 
-export default Religiosa;
+export default Detergentes;
