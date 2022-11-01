@@ -13,8 +13,8 @@ export const misObjetos = [
   {
     id: "2",
     key: 2,
-    img: require("../images2/image2.png"),
-    original: require("../images2/image2.png"),
+    img: require("../images2/detergentes/floral.jpg"),
+    original: require("../images2/detergentes/floral.jpg"),
     tipo: "detergentes",
     ruta: "/tentacion",
     all: true,
