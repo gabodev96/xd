@@ -29,12 +29,12 @@ export const Modal = ({ initial, stock, setterOn, setterContent }) => {
               {setterContent.map((popArray) => {
                 return (
                   <div
-                    className="flex pt-2 pop_up_card text-center"
+                    className="flex p-4 pop_up_card text-center"
                     key={popArray.key}
                   >
                     <img
                       src={popArray.img}
-                      className="w-45 h-40 ml-2 shadow-2xl border-[1px] border-gray-400 "
+                      className="w-45 h-40 ml-2 shadow-2xl "
                     />
                     <div className="pl-2 text-left">
                       <p className="font-baloo text-md">
