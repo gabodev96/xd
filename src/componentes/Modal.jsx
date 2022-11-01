@@ -18,7 +18,7 @@ export const Modal = ({ initial, stock, setterOn, setterContent }) => {
       >
         <AnimateModal>
           <div
-            className="pop_up_body rounded h-96 w-96 lg:h-72 bg-white"
+            className="pop_up_body rounded h-72 w-96 lg:h-72 bg-white"
             onClick={(e) => {
               // El modal no cierra si su contenido es clickeado
               e.stopPropagation();

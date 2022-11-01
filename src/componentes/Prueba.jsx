@@ -34,7 +34,7 @@ const Prueba = () => {
             <div className="flex  md:pt-18 lg:pt-0 justify-center w-full  h-screen">
               <div className="m-6  md:m-2">
                 <div className="flex flex-col items-center justify-center   md:space-y-0  md:mb-24 md:justify-end">
-                  <h1 className="font-baloo   text-center text-6xl pt-2 ">
+                  <h1 className="font-baloo   text-center text-6xl pt-2  select-none">
                     Linea Tentación
                   </h1>
 

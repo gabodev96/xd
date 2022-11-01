@@ -11,19 +11,18 @@ const Religiosa = () => {
     setencendidoModal(!encendidoModal);
   };
   const [data, setData] = useState([]);
+  let filtrados = misObjetos;
+
+  let filtradosArray = filtrados.filter((e) => e.all === true);
 
   useEffect(() => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(misObjetos);
+        resolve(filtradosArray);
       }, 5000);
     });
     getData.then((res) => setData(res));
   }, []);
-
-  let filtrados = misObjetos;
-
-  let filtradosArray = filtrados.filter((e) => e.all === true);
 
   return (
     <>
@@ -33,12 +32,12 @@ const Religiosa = () => {
             <div className="flex  md:pt-18 lg:pt-0 justify-center w-full  h-screen">
               <div className="m-6  md:m-2">
                 <div className="flex flex-col items-center justify-center   md:space-y-0  md:mb-24 md:justify-end">
-                  <h1 className="font-baloo   text-center text-6xl pt-2 ">
+                  <h1 className="font-baloo   text-center text-6xl pt-2  select-none">
                     Nuestros Productos
                   </h1>
 
                   <div className="grid gap-4  grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 pt-1  group">
-                    {filtradosArray.map((productos) => (
+                    {data.map((productos) => (
                       <div key={productos.key}>
                         <div>
                           <Item

@@ -82,7 +82,7 @@ const Header = () => {
           <li className="px-4">
             <NavLink
               className={({ isActive }) => (isActive ? "activado" : "group")}
-              to="/productos/galeria"
+              to="productos/galeria"
             >
               {" "}
               <FaImages size={35} className="bigred" color={"#007bff"} />

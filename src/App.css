@@ -411,6 +411,8 @@ textarea {
   background-color: #dc3545;
   color: white;
   width: 80px;
+  font-size: 0.65rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
   border-radius: 8px;
 }
 .botoncito:active {

@@ -14,9 +14,8 @@ const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
   return (
     <>
       <div className="text-black">
-        {/* 
         <div className="-mt-5  ">
-          <button
+          {/* <button
             className="bg-red-500 minus p-2 rounded"
             disabled={count <= 1}
             onClick={decrease}
@@ -30,12 +29,12 @@ const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
             onClick={increase}
           >
             +
-          </button>
+  </button> */}
         </div>
-  */}
 
-        <div className="flex  mt-40 lg:mt-16   justify-end">
-          {/*  <button
+        <div className="flex  mt-16 lg:mt-16  mr-10  justify-end">
+          {/*
+          <button
             className="bg-green-500 hover:bg-green-400 active:bg-green-800 p-3 rounded group"
             onClick={() => onAdd(count)}
           >
@@ -43,11 +42,10 @@ const ContadorProducts = ({ initial, stock, onAdd, setterOn }) => {
             <span className="absolute w-auto p-2   z-50  rounded-md shadow-md text-white bg-green-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
               Comprar
             </span>
-          </button>
-          */}
+          </button>  */}
 
           <button
-            className="bg-red-500 hover:bg-red-400  px-5 py-3 rounded group   lg:mt-0"
+            className="bg-red-500 hover:bg-red-400 px-5 py-3 mt-4 rounded group   ml-5 lg:mt-0"
             onClick={setterOn}
           >
             <ImExit />
