@@ -125,14 +125,8 @@ const Header = () => {
               {" "}
               <MdOutlinePolicy size={35} className="bigred" color={"#007bff"} />
               <span className="absolute w-auto p-2  z-50 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
-                Políticas
+                Otros
               </span>
-            </NavLink>
-          </li>
-          <li className="px-4">
-            <NavLink to="/carrito">
-              <FaShoppingCart size={35} className="bigred" color={"#007bff"} />
-              <CarWidget />
             </NavLink>
           </li>
         </ul>
