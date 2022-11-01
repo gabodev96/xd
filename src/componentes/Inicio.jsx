@@ -7,9 +7,9 @@ export const Inicio = () => {
   return (
     <AnimatedPage>
       <Carousel variant="dark" className="-z-10 md:-z-10 lg:z-0 xl:z0">
-        <Carousel.Item className="2xl:px-28">
+        <Carousel.Item className="">
           <img
-            className="w-128 h-128 object-cover lg:object-contain  2xl:h-160  2xl:object-fill"
+            className="w-screen h-128 lg:h-screen 2xl:h-160 object-cover"
             src={require("../bannerimages/banner.png")}
             alt="First slide"
           />

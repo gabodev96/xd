@@ -1,10 +1,11 @@
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
+
+import { useCartContext } from "../context/CartContext";
 
 const CarWidget = () => {
+  const { totalProducts } = useCartContext();
   return (
     <>
-      <FaShoppingCart />
       <span>{totalProducts() || ""}</span>
     </>
   );

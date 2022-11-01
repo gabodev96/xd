@@ -21,7 +21,7 @@ const Prueba = () => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
         resolve(filtradosArray);
-      }, 3000);
+      }, 1000);
     });
     getData.then((res) => setData(res));
   }, []);

@@ -4,11 +4,13 @@ import {
   FaIndustry,
   FaImages,
   FaPhone,
+  FaShoppingCart,
   FaCopyright,
 } from "react-icons/fa";
 import { MdOutlinePolicy } from "react-icons/md";
 
 import { NavLink } from "react-router-dom";
+import CarWidget from "../cartf/CarWidget";
 
 const Header = () => {
   return (
@@ -125,6 +127,12 @@ const Header = () => {
               <span className="absolute w-auto p-2  z-50 rounded-md shadow-md text-white bg-blue-500 text-xs font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100">
                 Políticas
               </span>
+            </NavLink>
+          </li>
+          <li className="px-4">
+            <NavLink to="/carrito">
+              <FaShoppingCart size={35} className="bigred" color={"#007bff"} />
+              <CarWidget />
             </NavLink>
           </li>
         </ul>

@@ -31,8 +31,8 @@ import Productos from "./componentes/Productos";
 import { compose } from "@mui/system";
 import Prueba from "./componentes/Prueba";
 import Detergentes from "./componentes/Detergentes";
+import CarWidget from "./cartf/CarWidget";
 export const CartContext = React.createContext("");
-console.log("CartContext:", CartContext);
 
 function App() {
   const navigate = useNavigate();
@@ -113,6 +113,7 @@ function App() {
             <Route path="/tentacion" element={<Tentacion />} />
             <Route path="/prueba" element={<Prueba />} />
             <Route path="/detergentes" element={<Detergentes />} />
+
             <Route path="/pop" element={<Modal />} />
             <Route
               path="/productos"
@@ -126,7 +127,6 @@ function App() {
               <Route path="supercleaner" element={<Detergentes />} />
               <Route path="tentacion" element={<Prueba />} />
             </Route>
-            <Route path="/carrito" element={<Carrito />} />
           </Routes>
         </CartProvider>
       </div>

@@ -19,7 +19,7 @@ const Religiosa = () => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
         resolve(filtradosArray);
-      }, 5000);
+      }, 1000);
     });
     getData.then((res) => setData(res));
   }, []);
@@ -36,7 +36,7 @@ const Religiosa = () => {
                     Nuestros Productos
                   </h1>
 
-                  <div className="grid gap-4  grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 pt-1  group">
+                  <div className="grid gap-4  grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 pt-1  group">
                     {data.map((productos) => (
                       <div key={productos.key}>
                         <div>
@@ -50,7 +50,7 @@ const Religiosa = () => {
                               <div className="image " ref={ref} onClick={open}>
                                 <img
                                   src={productos.original}
-                                  className="w-44  z-50 2xl:w-64  border-[1px] border-black rounded"
+                                  className="w-40  z-50 2xl:w-64  border-[1px] border-black rounded"
                                   alt="{title}"
                                 />
                                 <div className="overlay flex">
