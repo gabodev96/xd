@@ -32,6 +32,7 @@ import { compose } from "@mui/system";
 import Prueba from "./componentes/Prueba";
 import Detergentes from "./componentes/Detergentes";
 import CarWidget from "./cartf/CarWidget";
+import Velasreligiosas from "./componentes/Velasreligiosas";
 export const CartContext = React.createContext("");
 
 function App() {
@@ -126,6 +127,7 @@ function App() {
               <Route path="galeria" element={<Religiosa />} />
               <Route path="supercleaner" element={<Detergentes />} />
               <Route path="tentacion" element={<Prueba />} />
+              <Route path="religiosas" element={<Velasreligiosas />} />
             </Route>
           </Routes>
         </CartProvider>

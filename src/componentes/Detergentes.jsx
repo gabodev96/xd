@@ -50,7 +50,7 @@ const Detergentes = () => {
                               <div className="image " ref={ref} onClick={open}>
                                 <img
                                   src={productos.original}
-                                  className="w-44  z-50 2xl:w-64  border-[1px] border-black rounded"
+                                  className="w-44  z-50 2xl:w-64  border-[1px] border-gray-500 rounded"
                                   alt="{title}"
                                 />
                                 <div className="overlay flex">

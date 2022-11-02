@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
-import { Link } from "react-router-dom";
 import { misObjetos } from "../Data/Datos";
 import { AnimatedPage } from "./AnimatedPage";
 import { Modal } from "./Modal";
-const Prueba = () => {
+const Velasreligiosas = () => {
   const [modalContenido, setmodalContenido] = useState([]);
   const [encendidoModal, setencendidoModal] = useState(false);
   const cambiarContenido = (productos) => {
@@ -12,10 +11,9 @@ const Prueba = () => {
     setencendidoModal(!encendidoModal);
   };
   const [data, setData] = useState([]);
-
   let filtrados = misObjetos;
 
-  let filtradosArray = filtrados.filter((e) => e.category === "tentacion");
+  let filtradosArray = filtrados.filter((e) => e.reli === true);
 
   useEffect(() => {
     const getData = new Promise((resolve) => {
@@ -30,12 +28,12 @@ const Prueba = () => {
     <>
       <AnimatedPage>
         <Gallery withCaption>
-          <div className=" w-screen h-screen ">
+          <div className="w-screen h-screen ">
             <div className="flex  md:pt-18 lg:pt-0 justify-center w-full  h-screen">
               <div className="m-6  md:m-2">
                 <div className="flex flex-col items-center justify-center   md:space-y-0  md:mb-24 md:justify-end">
                   <h1 className="font-baloo   text-center text-6xl pt-2  select-none">
-                    Linea Tentación
+                    Nuestros Productos
                   </h1>
 
                   <div className="grid gap-4  grid-cols-3 lg:grid-cols-6 2xl:grid-cols-6 pt-1  group">
@@ -52,7 +50,7 @@ const Prueba = () => {
                               <div className="image " ref={ref} onClick={open}>
                                 <img
                                   src={productos.original}
-                                  className="w-32  z-50 2xl:w-64  border-[1px] border-gray-500 rounded"
+                                  className="w-40  z-50 2xl:w-64  border-[1px] border-gray-500 rounded"
                                   alt="{title}"
                                 />
                                 <div className="overlay flex">
@@ -94,4 +92,4 @@ const Prueba = () => {
   );
 };
 
-export default Prueba;
+export default Velasreligiosas;
